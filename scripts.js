@@ -1,1 +1,1 @@
-(function(){ console.log(_) })(_)
+(function($){ console.log($, _) })(jQuery)
