@@ -1,1 +1,1 @@
-(function(){ concole.log(_) })(_)
+(function(){ console.log(_) })(_)
