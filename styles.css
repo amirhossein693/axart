@@ -185,3 +185,9 @@ h3[class*="styles__title"] {
     direction: ltr;
     font-size: 13px;
 }
+[class*="styles__overlay-dark"][class*="styles__overlay-dark"] [class*="styles__overlay-dark"],
+[class*="styles__overlay-dark"][class*="styles__overlay-dark"] [class*="styles__overlay-dark"]:active,
+[class*="styles__overlay-dark"][class*="styles__overlay-dark"] [class*="styles__overlay-dark"]:hover {
+    background: #fff;
+    color: var(--color-brand);   
+}
