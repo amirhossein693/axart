@@ -145,6 +145,19 @@ h3[class*="styles__title"] {
     display: block;
     width: 100%;
 }
+[class*="styles__inner"] [class*="styles__slideshow"] [class*="styles__slide-wrapper"] [class*="styles__slide-inner"] {
+    text-align: center;
+    max-height: 100vh;
+}
+[class*="styles__inner"] [class*="styles__slideshow"] [class*="styles__slide-wrapper"] [class*="styles__slide-inner"] img {
+    display: inline;
+    width: auto;
+    max-height: 100vh;
+}
+[class*="general__main"] [class*="styles__header"] + [class*="styles__wrapper"] [class*="styles__slide-wrapper"]:before {
+    max-height: 100vh;
+    margin-top: calc(100vh);
+}
 [class*="styles__inner"] [class*="styles__content"] {
     display: flex;
     justify-content: space-between;
@@ -270,4 +283,39 @@ h3[class*="styles__title"] {
 }
 [class*="styles__mega-footer"] [class*="styles__grid"] [class*="styles__shop-info"] {
     width: 60%;
+}
+[class*="styles__bread-crumb"] {
+    display: none;
+}
+[class*="styles__inner"] [class*="styles__slideshow"] + [class*="styles__content"] [class*="styles__title-wrapper"] {
+    flex: 1 0 100%;
+    text-align: right;
+}
+[class*="styles__inner"] [class*="styles__slideshow"] + [class*="styles__content"] [class*="styles__prices"]{
+    flex: 1 0 100%;
+    text-align: right;
+    display: flex;
+    align-items: center;
+}
+[class*="styles__inner"] [class*="styles__slideshow"] + [class*="styles__content"] [class*="styles__prices"] + div {
+    order: 4;
+    position: relative;
+    top: -90px;
+}
+[class*="styles__inner"] [class*="styles__slideshow"] + [class*="styles__content"] [class*="styles__prices"] + div [class*="styles__options"] {
+    margin-top: 0;
+}
+[class*="styles__inner"] [class*="styles__content"] {
+    flex-wrap: wrap;
+}
+[class*="styles__inner"] [class*="styles__slideshow"] + [class*="styles__content"] [class*="styles__prices"]:before {
+    content: "قیمت:";
+    display: inline-block;
+    font-size: 14px;
+    line-height: 160%;
+    margin: 4px 0 0 25px;
+    color: var(--color-brand);
+}
+[class*="general__main"] [class*="styles__header"] + [class*="styles__wrapper"] + [class*="styles__text-block-normal"] {
+    padding: 0;
 }
