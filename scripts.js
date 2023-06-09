@@ -18,4 +18,9 @@
     product.append(`<div>${sku} - ${name}</div>`)  
   };
   $(productSelector).each(appendProductDetails);
+  
+  
+  $('[class*="styles__left-side"] > [class*="styles__user-auth"]').clone(true).appendTo('[class*="styles__footer"] [class*="styles__column-menu"] > ul > li:last-child');
+  $('[class*="styles__footer"] div[class*="styles__logo"]').append("<div>عکس آرت یک فضایی برای نمایش و حفظ هنر عکاسان و ترغیب این هنر برای سایرین است</div>");
+  
 })(jQuery)
